@@ -3,6 +3,7 @@ Follows the following grammar:
 
 STMTS   : STMTS STMT
         |   epsilon
+	
 STMT  	:  ;
 	|   EXPR;
 	|   IF (EXPR) STMT 

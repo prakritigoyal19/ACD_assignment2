@@ -1,13 +1,14 @@
 # ACD
 Follows the following grammar:
+
 STMTS   : STMTS STMT
         |   epsilon
 STMT  	:  ;
-		|   EXPR;
-		|   IF (EXPR) STMT 
-		|   IF (EXPR) STMT ELSE STMT
-		|   FOR (EXPR ; EXPR ; EXPR) STMT
-		|   {STMTS}
+	|   EXPR;
+	|   IF (EXPR) STMT 
+	|   IF (EXPR) STMT ELSE STMT
+	|   FOR (EXPR ; EXPR ; EXPR) STMT
+	|   {STMTS}
 
 
 # Instructions to compile the program:

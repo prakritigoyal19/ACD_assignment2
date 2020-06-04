@@ -1,17 +1,21 @@
 # ACD
-Written parser for given grammer for partial fulfillment of the course Automata and Compiler Design.
+Follows the following grammar:
+STMTS   : STMTS STMT
+        |   epsilon
+STMT  	:  ;
+		|   EXPR;
+		|   IF (EXPR) STMT 
+		|   IF (EXPR) STMT ELSE STMT
+		|   FOR (EXPR ; EXPR ; EXPR) STMT
+		|   {STMTS}
+
+
+# Instructions to compile the program:
+
+- Type `make` in the terminal.
+- This will create the executable file in the directory.
 
 # Instructions to run the program:
 
-## Run the commands:
+- Run ./a.out <testFileName>
 
-- Run the following in a shell:
-  - `lex lexer.l`
-  - `yacc -d parser.y`
-  - `gcc lex.yy.c y.tab.c`
-- This will create the executable file in the directory.
-
-## Using the makefile
-
-- Type `make` in the shell.
-- This will create the executable file in the directory.

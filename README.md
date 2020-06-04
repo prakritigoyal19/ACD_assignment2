@@ -19,5 +19,5 @@ STMT  	:  ;
 
 # Instructions to run the program:
 
-- Run ./a.out <testFileName>
+- Run ./a.out testFileName
 
